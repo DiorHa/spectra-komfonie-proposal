@@ -1,0 +1,67 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-text antialiased;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(255, 138, 61, 0.16), transparent 38%),
+    radial-gradient(circle at 82% 22%, rgba(53, 88, 165, 0.18), transparent 42%),
+    linear-gradient(180deg, #090c12 0%, #080b11 40%, #0a0d14 100%);
+  min-height: 100vh;
+}
+
+.container-pad {
+  @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+}
+
+.panel {
+  @apply rounded-2xl border border-line bg-panel/65 backdrop-blur-sm;
+}
+
+.section-title {
+  @apply text-2xl font-semibold tracking-tight sm:text-3xl;
+}
+
+.section-copy {
+  @apply mt-3 max-w-3xl text-sm leading-7 text-muted sm:text-base;
+}
+
+.accent-line {
+  @apply h-px w-14 bg-gradient-to-r from-accent to-accentSoft;
+}
+
+.interactive-lift {
+  @apply transition duration-300;
+}
+
+.interactive-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 1px rgba(255, 138, 61, 0.32), 0 14px 38px rgba(255, 138, 61, 0.14);
+}
+
+.edge-glow {
+  position: relative;
+}
+
+.edge-glow::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+  border: 1px solid rgba(255, 138, 61, 0);
+  transition: border-color 250ms ease;
+}
+
+.edge-glow:hover::after {
+  border-color: rgba(255, 138, 61, 0.45);
+}
