@@ -33,7 +33,7 @@ export function HeroSection() {
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="mailto:partnerships@spectra.example?subject=Komfonie%20Intro%20Conversation"
+              href="mailto:dior@thespectra.co?subject=Komfonie%20Intro%20Conversation"
               className="inline-flex items-center gap-2 rounded-xl border border-line px-5 py-3 text-sm text-text transition duration-300 hover:-translate-y-0.5 hover:border-accent hover:bg-accent/10 hover:text-white"
             >
               <CalendarDays className="h-4 w-4" />
@@ -115,3 +115,4 @@ export function HeroSection() {
     </section>
   );
 }
+

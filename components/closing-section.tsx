@@ -15,7 +15,7 @@ export function ClosingSection() {
 
         <div className="relative mt-8 flex flex-wrap gap-3">
           <a
-            href="mailto:partnerships@spectra.example?subject=Komfonie%20Intro%20Conversation"
+            href="mailto:dior@thespectra.co?subject=Komfonie%20Intro%20Conversation"
             className="rounded-xl bg-accent px-5 py-3 text-sm font-medium text-bg transition duration-300 hover:-translate-y-0.5 hover:bg-accentSoft hover:shadow-[0_10px_28px_rgba(255,138,61,0.32)]"
           >
             Book an Intro Conversation
@@ -35,3 +35,4 @@ export function ClosingSection() {
     </section>
   );
 }
+
